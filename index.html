@@ -16,6 +16,21 @@
         .content {
             padding: 20px;
             text-align: center;
+	.gallery {
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	 }
+	 .gallery img {
+	 margin: 10px;
+	 width: 200px;
+	 height: auto;
+	 border-radius: 5px;
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ 	transition: transform 0.3s;
+	 }
+	 .gallery img:hover {
+	 transform: scale(1.1);
         }
        .social-links a {
  		display: inline-block;
@@ -70,8 +85,10 @@
 		 <li>Overflow - 17 January at 7 PM</li>
 	 </ul>
 	<h2>Photo Gallery</h2>
-	 <img src="Christmas.jpg" alt="Event 1">
-	 <img src="Youth Sunday.jpg" alt="Event 2">
+	<div class="gallery">
+	 <img src="Christmas.jpg" alt="Chistmas">
+	 <img src="Youth Sunday.jpg" alt="Youth Sunday">
+	</div>
     </div>
 </body>
 </html>
