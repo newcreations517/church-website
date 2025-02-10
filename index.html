@@ -1,94 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Church Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .header-image {
-            width: 100%;
-            height: auto;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-	.gallery {
-	 display: flex;
-	 flex-wrap: wrap;
-	 justify-content: center;
-	 }
-	 .gallery img {
-	 margin: 10px;
-	 width: 200px;
-	 height: auto;
-	 border-radius: 5px;
-	 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
- 	transition: transform 0.3s;
-	 }
-	 .gallery img:hover {
-	 transform: scale(1.1);
-        }
-       .social-links a {
- 		display: inline-block;
- 		margin: 0 10px;
- 		text-decoration: none;
- 		color: #fff;
- 		padding: 10px 20px;
- 		border-radius: 5px;
-	 }
-	 .social-links a.youtube {
-	 background-color: #ff0000;
-	 }
- 	.social-links a.youtube:hover {
-	 background-color: #cc0000;
-	 }
-	 .social-links a.instagram {
-	 background-color: #E1306C;
-	 }
-	 .social-links a.instagram:hover {
- 	background-color: #C13584;
- 	}
-	.social-links a.facebook {
-	 background-color: #3b5998;
-	 }
-	 .social-links a.facebook:hover {
-	 background-color: #2d4373;
-	 }
-    </style>
+  <meta charset="UTF-8">
+  <title>Church Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header-image {
+      width: 100%;
+      height: auto;
+    }
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      margin: 10px;
+      width: calc(50% - 20px);
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .social-links a.youtube {
+      background-color: #ff0000;
+    }
+    .social-links a.youtube:hover {
+      background-color: #cc0000;
+    }
+    .social-links a.instagram {
+      background-color: #E1306C;
+    }
+    .social-links a.instagram:hover {
+      background-color: #C13584;
+    }
+    .social-links a.facebook {
+      background-color: #3b5998;
+    }
+    .social-links a.facebook:hover {
+      background-color: #2d4373;
+    }
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .content {
+        padding: 10px;
+      }
+      h1, h2 {
+        font-size: 1.5em;
+      }
+      .gallery img {
+        width: calc(100% - 20px);
+      }
+      .social-links a {
+        display: block;
+        margin: 10px auto;
+        width: calc(100% - 40px);
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <img src="church.jpg" alt="Church Image" class="header-image">
-    </div>
+  <div class="header">
+    <img src="church.jpg" alt="Church Image" class="header-image">
+  </div>
 
-    <div class="content">
-        <h1>Welcome to Our Church</h1>
-        <h2>About Us</h2>
-        <p>As a local congregation we exist to build a loving community where every soul is discipled to live by the Great Commandment and be involved in the ministry to obey the Great Commission.</p>
-        <p>Are you battling fear, anxiety, depression and feeling of hopelessness? Do you have marital or relationship issues? Are you plagued with constant sickness? For Prayer or Counseling</p>
-        <h2>Contact Us</h2>
-        <p>Phone: +91 85510 62035</p>
-        <p>Email: newcreationschurch@gmail.com</p>
-        <h2>Follow Us on Social Media</h2>
-        <div class="social-links">
-            <a href="https://www.youtube.com/@newcreationschurch" target="_blank" class="youtube">YouTube</a>
-            <a href="https://www.instagram.com/newcreations.goa?igsh=d2NqdjduNmYwcGlm" target="_blank" class="instagram">Instagram</a>
-            <a href="https://www.facebook.com/share/1AiF9nm9hF/" target="_blank" class="facebook">Facebook</a>
-        </div>
-	<h2>Upcoming Events</h2>
-	 <ul>
-		 <li>Sunday Service - Every Sunday at 11 AM</li>
-		 <li>Overflow - 17 January at 7 PM</li>
-	 </ul>
-	<h2>Photo Gallery</h2>
-	<div class="gallery">
-	 <img src="Christmas.jpg" alt="Chistmas">
-	 <img src="YouthSunday.jpg" alt="Youth Sunday">
-	</div>
+  <div class="content">
+    <h1>Welcome to Our Church</h1>
+    <h2>About Us</h2>
+    <p>As a local congregation we exist to build a loving community where every soul is discipled to live by the Great Commandment and be involved in the ministry to obey the Great Commission.</p>
+    <p>Are you battling fear, anxiety, depression, and feelings of hopelessness? Do you have marital or relationship issues? Are you plagued with constant sickness? For prayer or counseling, reach out to us.</p>
+    <h2>Contact Us</h2>
+    <p>Phone: +91 85510 62035</p>
+    <p>Email: newcreationschurch@gmail.com</p>
+    <h2>Follow Us on Social Media</h2>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@newcreationschurch" target="_blank" class="youtube">YouTube</a>
+      <a href="https://www.instagram.com/newcreations.goa?igshid=d2NqdjduNmYwcGlm" target="_blank" class="instagram">Instagram</a>
+      <a href="https://www.facebook.com/share/1AiF9nm9hF/" target="_blank" class="facebook">Facebook</a>
     </div>
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Sunday Service - Every Sunday</li>
+	<li>Hindi at 8:30 AM</li>
+	<li>English at 11 AM</li>
+    </ul>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="Christmas.jpg" alt="Christmas">
+      <img src="YouthSunday.jpg" alt="Youth Sunday">
+    </div>
+  </div>
 </body>
 </html>
